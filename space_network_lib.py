@@ -42,7 +42,6 @@ class SpaceEntity(ABC):
     def __repr__(self):
         return f"SpaceEntity(name='{self.name}', distance_from_earth={self.distance_from_earth})"
 
-    @abstractmethod
     def receive_signal(self, packet: Packet):
         pass
 
